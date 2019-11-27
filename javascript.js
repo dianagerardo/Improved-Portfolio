@@ -28,33 +28,37 @@ window.onload = function () {
 
     // Transition example 2
 
-    const $button = $(".arrow");
+    const $buttonLeft = $(".arrow-left");
+    const $buttonRight = $(".arrow-right");
 
     const $about = $(".transition-about");
     const $portfolio = $(".transition-portfolio")
 
 
 
-    let transition = function () {
-        TweenLite.fromTo($about, 2.2, { scaleX: 0 }, { scaleX: 1, transformOrigin: 'left', ease: Power4.easeInOut })
-        TweenLite.fromTo($portfolio, 2.2, { scaleX: 0 }, { scaleX: 1, transformOrigin: 'left', ease: Power4.easeInOut }, .2)
-        TweenLite.fromTo($about, 1.6, { xPercent: -100, autoAlpha: 0 }, { xPercent: 0, autoAlpha: 1, ease: Power4.easeInOut }, .7)
-        TweenLite.set($about, { scaleX: 0 })
-        TweenLite.set($portfolio, { autoAlpha: 0 })
-        TweenLite.to($about, 2.2, { scaleX: 0, transformOrigin: 'right', ease: Power4.easeInOut })
-        TweenLite.to($about, .2, { autoAlpha: 0 }, '-=1.2')
-}
+    let transitionLeft = function () {
+        TweenLite.fromTo($about, {opacity: 0}, {opacity: 1}, 2.2, { scaleX: 0 }, { scaleX: 1, transformOrigin: 'left', ease: Power4.easeInOut })
+    };
+
+    let transitionRight = function () {
+        TweenLite.fromTo($about, {opacity: 1}, {opacity: 0})
+        TweenLite.fromTo($portfolio, {opacity: 0}, {opacity: 1})
+    }
+
+    $buttonLeft.on('click', () => {
+        transitionLeft();
+    });
+    $buttonRight.on('click', () => {
+        transitionRight();
+    });
+
+    // 
 
 
 
 
-$button.on('click', () => {
-    transition(0);
-});  
 
-    
-    
-    
+
 }
 
 
