@@ -27,6 +27,7 @@
     cursor: pointer;
     font-size: 40px;
     line-height: 18px;
+    text-align: center;
   }
   
   p{
@@ -43,18 +44,18 @@
     text-decoration: underline;
   }
   
-  #demo {
+  .demo {
     height:100%;
     position:relative;
   }
 
-#demo {
+.demo {
 	width: 100%;
 	height: 70px;
 	background-color: #333;
 	padding: 8px;
 }
-#bar{
+.bar{
 	background-color: #1ABC9C; 
 	color:black; 
 	position:relative; 
@@ -63,9 +64,19 @@
 	}
 #logo {
 	position: relative;
-	width: 100%;
     height: 60px;
 	background: url(../favicon_io/favicon.ico)no-repeat;
+}
+
+#logo:hover {
+  height: 100%;
+  width:5%;
+  border-color: #57a818 ;
+  background-image: -webkit-linear-gradient(top, #57a818, #4d9916);
+    background-image: -moz-linear-gradient(top, #57a818, #4d9916);
+    background-image: -ms-linear-gradient(top, #57a818, #4d9916);
+    background-image: -o-linear-gradient(top, #57a818, #4d9916);
+    background-image: linear-gradient(to bottom, #57a818, #4d9916);
 }
   
   .green{
@@ -99,7 +110,6 @@
     font-size: 10px;
     line-height: 18px;
     text-align: center;
-    
 
   }
 
@@ -131,8 +141,8 @@
   }
   
   .arrow:hover {
-    box-shadow: 2px -2px 0 2px rgb(52, 104, 78) inset;
-    -webkit-box-shadow: 4px -4px rgb(52, 104, 78) inset;
+    box-shadow: 2px -2px 0 2px #57a818 inset;
+    -webkit-box-shadow: 4px -4px #57a818 inset;
   }
   
   .arrow-right { 
@@ -159,16 +169,17 @@ html, body {
     height: 100%;
     padding: 10%;
     margin-top: 10%;
+    margin-bottom: 12%;
     background:#333;
     text-align: center; 
 }
 
-/* Transition example 2 */
+/* Transition*/
 
 body {
     overflow: hidden;
   }
-  .page-transition__black {
+  /* .page-transition__black {
     position: absolute;
     left: 0;
     top: 0;
@@ -200,19 +211,6 @@ body {
     top: 15vh;
     left: 50vw;
     transform: translate(-50%,-50%);
-  }
-  button {
-    bottom: 15vh;
-    left: 50vw;
-    text-transform: uppercase;
-    font-family: sans-serif;
-    font-size: 16px;
-    position: absolute;
-    z-index: 1;
-    color: #fff;
-    background: transparent;
-    padding: 20px;
-    border: 2px solid #fff;
-  }
+  } */
   
   
