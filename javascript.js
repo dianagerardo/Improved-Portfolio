@@ -37,6 +37,7 @@ window.onload = function () {
 
 
     let transitionLeft = function () {
+        TweenLite.fromTo($portfolio, {opacity: 0}, {opacity: 0})
         TweenLite.fromTo($about, {opacity: 0}, {opacity: 1}, 2.2, { scaleX: 0 }, { scaleX: 1, transformOrigin: 'left', ease: Power4.easeInOut })
     };
 
