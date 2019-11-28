@@ -42,7 +42,15 @@
     border: 1px solid #fff;
   width: 300px;
   height: 300px;
+  flex: initial;
 
+  }
+
+  .grid-stuff {
+    border: 1px solid #fff;
+  width: 300px;
+  height: 300px;
+  flex: initial;
   }
 
   h1, h2, h3 {
@@ -72,10 +80,16 @@
     font-weight: 600;
     cursor: pointer;
     font-size: 40px;
-    line-height: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
+    word-wrap: normal;
+  }
+
+  .word {
+    color:honeydew;
+    font-family: "Signika Negative", sans-serif;
+    text-transform: uppercase;
   }
   
   p{
@@ -177,6 +191,22 @@
     color: #ffffff;
     text-decoration: none;
   }
+
+  .link:hover {
+    background: #57a818;
+    background-image: -webkit-linear-gradient(top, #57a818, #4d9916);
+    background-image: -moz-linear-gradient(top, #57a818, #4d9916);
+    background-image: -ms-linear-gradient(top, #57a818, #4d9916);
+    background-image: -o-linear-gradient(top, #57a818, #4d9916);
+    background-image: linear-gradient(to bottom, #57a818, #4d9916);
+    text-shadow: 0px 1px 0px #32610e;
+    -webkit-box-shadow: 0px 1px 0px fefefe;
+    -moz-box-shadow: 0px 1px 0px fefefe;
+    box-shadow: 0px 1px 0px fefefe;
+    color: #ffffff;
+    text-decoration: none;
+
+  }
   
   /* Arrows */
 
@@ -236,6 +266,7 @@ html, body {
   opacity: 0;
 }
 
+/* Media queries */
 @media only screen and (max-width: 414px) {
   .arrow {
     padding: 5%; /* Arrow size */
@@ -251,6 +282,48 @@ html, body {
     
     left:10% }
   a:nth-child(2) { left:110% }
+
+  .words {
+    
+    padding: 5px 5px;
+ 
+    font-weight: 400;
+   
+    font-size: 30px;
+
+  }
+
+  .about-me {
+    font-size: 12px;
+  }
+
+  .box {
+    width:50px;
+    height:25px;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 12px;
+  };
+
+  .demo {
+    height:10px;
+  
+  }
+
+.demo {
+  height: 50px;
+}
+
+.bar{
+	height:5px;
+  }
+  
+#logo {
+	position: relative;
+	background: url(../favicon_io/favicon-32x32.png)no-repeat;
+}
+
+
 }
 
   

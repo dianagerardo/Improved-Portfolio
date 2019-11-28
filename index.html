@@ -122,7 +122,7 @@
             <div class="aboutme-container transition_wrapper">
                 <div class="page-transition">
                     <div class="transition-container transition-about about">
-                       
+
                         <p class="about-me">
                             Hello, my name is Diana Gerardo.
                             I am a full-stack web developer with experience in UI/UX javascript.
@@ -132,75 +132,103 @@
                             to
                             display projects under the categories listed.
                         </p>
-                  
+
                     </div>
 
                     <div class="portfolio-flex transition-portfolio">
 
                         <div class="grid row row-cols-4 row-cols-md-4">
-                            <div class = "grid-item">
-                                <img src="img/watercolor-crystals.jpg" alt="crystal" style="height:50%;">
-                                <span>
-                                    <p>Crystal Game:</p>
-                                </span>
-                                </img>
+
+                            <div class="grid-item">
+                                <div class="grid-stuff word zoo">
+                                    <img src="img/zoo.png" alt="zoo" style="height:90%;">
+                                    <span>
+                                        <p class="link" id="zoo">Word Guess Game:</p>
+                                    </span>
+                                    </img>
+                                </div>
                             </div>
 
-                            <div class = "grid-item">
-                                <img src="img/trivia.jpg" alt="trivia" style="height:50%;">
-                                <span>
-                                    <p>Trivia:</p>
-                                </span>
-                                </img>
+                            <div class="grid-item">
+                                <div class="grid-stuff word crystal">
+                                    <img src="img/crystals.png" alt="crystals" style="height:90%;">
+                                    <span>
+                                        <p class="link">Crystal Game:</p>
+                                    </span>
+                                    </img>
+                                </div>
                             </div>
 
-                            <div class = "grid-item">
-                                <img src="img/elephant.jpeg" alt="trivia" style="height:50%;">
+                            <div class="grid-item">
+                                    <div class="grid-stuff word trivia">
+                                <img src="img/trivia.png" alt="trivia" style="height:90%;width:90%">
                                 <span>
-                                    <p>GifTastic:</p>
+                                    <p class="link">Trivia:</p>
                                 </span>
                                 </img>
+                                </div>
                             </div>
 
-                            <div class = "grid-item">
-                                <img src="img/" alt="tacos" style="height:50%;">
+                            <div class="grid-item">
+                                    <div class="grid-stuff word gifs">
+                                <img src="img/gifs.png" alt="gifs" style="height:90%; width:90%">
                                 <span>
-                                    <p>FoodFinder:</p>
+                                    <p class="link">GifTastic:</p>
                                 </span>
                                 </img>
+                                </div>
                             </div>
 
-                            <div class = "grid-item">
-                                <img src="img/LIRI.png" alt="liri" style="height:10%; width: 50%;">
+                            <div class="grid-item">
+                                    <div class="grid-stuff word food">
+                                <img src="img/foodfinder.png" alt="tacos" style="height:90%; width:90%">
                                 <span>
-                                    <p>LIRI Bot:</p>
+                                    <p class="link">FoodFinder:</p>
                                 </span>
                                 </img>
+                                </div>
                             </div>
 
-                            <div class = "grid-item">
-                                <img src="img/Match.png" alt="match" style="height:10%;">
+                            <div class="grid-item">
+                                    <div class="grid-stuff word liri">
+                                <img src="img/LIRI.png" alt="liri" style="height:90%; width:90%">
                                 <span>
-                                    <p>Friend Finder:</p>
+                                    <p class="link">LIRI Bot:</p>
                                 </span>
                                 </img>
+                                </div>
                             </div>
 
-                            <div class = "grid-item">
-                                <img src="img/burger-available.jpg" alt="burger" style="height:10%;">
+                            <div class="grid-item">
+                                    <div class="grid-stuff word friend">
+                                <img src="img/Match.png" alt="match" style="height:90%; width:90%">
                                 <span>
-                                    <p>Diana's Burgers:</p>
+                                    <p class="link"> Friend Finder:</p>
                                 </span>
                                 </img>
+                                </div>
                             </div>
 
-                            <div class = "grid-item">
-                                <img src="img/" alt="resume" style="height:10%;">
+                            <div class="grid-item">
+                                    <div class="grid-stuff word burger">
+                                <img src="img/burgers.png" alt="burger" style="height:90%; width:90%">
                                 <span>
-                                    <p>Resume Builder:</p>
+                                    <p class="link">Diana's Burgers:</p>
                                 </span>
                                 </img>
+                                </div>
                             </div>
+
+                            <div class="grid-item">
+                                    <div class="grid-stuff word resume">
+                                <img src="img/resume.png" alt="resume" style="height:90%; width:90%">
+                                <span>
+                                    <p class="link">Resume Builder:</p>
+                                </span>
+                                </img>
+                                </div>
+                            </div>
+
                         </div>
 
 
@@ -217,3 +245,19 @@
         </div>
     </footer>
 </body>
+
+<script>
+    $(".zoo").click(function () {
+        $(".zoo").replaceWith("<p class='word'>Word Guess Game: </p>");
+    });
+
+    $(".crystal").click(function () {
+        $(".crystal").replaceWith("<p class='word'>Crystal Game:</p>' <li>Explore the magic of crystal collecting! Click on the crystals to match the number on screen!</li> <a href='https://dianagerardo.github.io/unit-4-game/.'' class='btn btn-outline-info'target='_blank'> Check out the game!</a><a href='https://github.com/dianagerardo/unit-4-game' class='btn btn-outline-info' target='_blank'> Check out the code!</a>");
+    });
+
+    $(".trivia").click(function () {
+        $(".trivia").replaceWith("<p class='word'>Trivia Night:</p>' <li>Take a trivia quiz and test your animal knowledge! Just answer the questions!</li> <a href='https://dianagerardo.github.io/TriviaGame/' class='btn btn-outline-info'>Test your knowledge</a> <a href='https://github.com/dianagerardo/TriviaGame' class='btn btn-outline-info' target='_blank'> Check out the code!</a>");
+    });
+
+
+</script>
