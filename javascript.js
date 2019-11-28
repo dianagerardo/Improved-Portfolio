@@ -63,23 +63,18 @@ window.onload = function () {
 
     const $about = $(".transition-about");
     const $portfolio = $(".transition-portfolio");
-    const $link = $(".link")
 
-    $link.on('click', () => {
-        var textnode = document.createTextNode("Water");
-        var link = document.getElementById("trivia").childNodes;
-        link.replaceChild(textnode, link.childNodes)
-    })
-
-
+    const $info = $(".info");
 
 
     let transitionLeft = function () {
+
         TweenLite.fromTo($portfolio, { opacity: 0 }, { opacity: 0 })
         TweenLite.fromTo($about, { opacity: 0 }, { opacity: 1 }, 2.2, { scaleX: 0 }, { scaleX: 1, transformOrigin: 'left', ease: Power4.easeInOut })
     };
 
     let transitionRight = function () {
+        TweenLite.fromTo($info, { opacity: 1 }, { opacity: 0 })
         TweenLite.fromTo($about, { opacity: 1 }, { opacity: 0 })
         TweenLite.fromTo($portfolio, { opacity: 0 }, { opacity: 1 })
     }
@@ -89,10 +84,27 @@ window.onload = function () {
     });
     $buttonRight.on('click', () => {
         transitionRight();
+
     });
 
+
     // 
-  
+
+    const svgPath = document.querySelectorAll('.path');
+
+
+    const svgText = anime({
+        targets: svgPath,
+        loop: true,
+        direction: 'alternate',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInOutSine',
+        duration: 700,
+        delay: (el, i) => { return i * 500 }
+    });
+
+
+
 };
 
 
