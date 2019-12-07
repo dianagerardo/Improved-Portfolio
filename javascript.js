@@ -66,6 +66,9 @@ window.onload = function () {
 
     const $info = $(".info");
 
+    const $portfolioPage = $(".portfolio");
+    const $aboutMePage = $(".about-me");
+
 
     let transitionLeft = function () {
 
@@ -86,6 +89,16 @@ window.onload = function () {
         transitionRight();
 
     });
+
+    $portfolioPage.on('click', () => {
+        transitionRight();
+
+    });
+    $aboutMePage.on('click', () => {
+        transitionLeft();
+    });
+
+  
 
 
     // 

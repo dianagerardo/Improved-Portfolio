@@ -337,6 +337,7 @@ html, body {
 	background: url(../favicon_io/favicon-32x32.png)no-repeat;
 }
 
+/* Attempting to animate SVG name */
 .path {
   stroke-dasharray: 100;
   animation: dash 5s linear ;

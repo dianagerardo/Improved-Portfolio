@@ -78,15 +78,17 @@
                 <div class="pos-f-t">
                     <div class="collapse" id="navbarToggleExternalContent">
                         <div class="bg-dark p-4">
-                            <a href="portfolio.html">Portfolio</a>
+                            <a class="portfolio-page" title="portfolio" href="javascript:;">Portfolio</a>
+                            <br>
+                            <a class="about-me" title="Home" href="javascript:;">Home</a>
                         </div>
                     </div>
 
                 </div>
             </header>
 
-            <a class="arrow arrow-right" title="Next" href="javascript:;"></a>
-            <a class="arrow arrow-left" title="Previous" href="javascript:;"></a>
+            <a class="arrow arrow-right portfolio-page" title="Next" href="javascript:;"></a>
+            <a class="arrow arrow-left about-me" title="Previous" href="javascript:;"></a>
 
             <div class="home-container transition__home" style="background-color: aqua;">
 
@@ -249,6 +251,16 @@
                                 </div>
                             </div>
 
+                            <div class="grid-item">
+                                <div class="grid-stuff word news">
+                                    <img src="img/news-scraper.png" alt="news" style="height:90%; width:90%">
+                                    <span>
+                                        <p class="link">News Scraper:</p>
+                                    </span>
+                                    </img>
+                                </div>
+                            </div>
+
                         </div>
 
                     </div>
@@ -290,12 +302,10 @@
         opacity: 0,
     });
 
-
-
     $(".zoo").click(function () {
-        $(".zoo").replaceWith("<p class='word'>Word Guess Game: </p>");
+        $(".zoo").replaceWith("<p class='word'>Word Guess Game: </p><li>Try to guess the word before you run out of guesses!</li> <a href='https://dianagerardo.github.io/Word-Guess-Game/' class='btn btn-outline-info'target='_blank'> Check out the game!</a><a href='https://github.com/dianagerardo/Word-Guess-Game' class='btn btn-outline-info' target='_blank'> Check out the code!</a>");
     });
-
+    
     $(".crystal").click(function () {
         $(".crystal").replaceWith("<p class='word'>Crystal Game:</p>' <li>Explore the magic of crystal collecting! Click on the crystals to match the number on screen!</li> <a href='https://dianagerardo.github.io/unit-4-game/.'' class='btn btn-outline-info'target='_blank'> Check out the game!</a><a href='https://github.com/dianagerardo/unit-4-game' class='btn btn-outline-info' target='_blank'> Check out the code!</a>");
     });
@@ -335,4 +345,9 @@
         $(".resume").replaceWith("<p class='word'>Trivia Night:</p>' <li>Take a trivia quiz and test your animal knowledge! Just answer the questions!</li> <a href='https://dianagerardo.github.io/TriviaGame/' class='btn btn-outline-info'>Test your knowledge</a> <a href='https://github.com/dianagerardo/TriviaGame' class='btn btn-outline-info' target='_blank'> Check out the code!</a>");
     });
 
+    $(".news").click(function () {
+        $(".news").replaceWith("<p class='word'>News Scraper:</p>' <li>Check out the latest news! Make sure to leave comments to further discussion about the topic. </li> <a href='https://morning-lake-24896.herokuapp.com/' class='btn btn-outline-info'>See the latest news</a> <a href='https://github.com/dianagerardo/Article-scraper' class='btn btn-outline-info' target='_blank'> Check out the code!</a>");
+    });
+
 </script>
+</html>
